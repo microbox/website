@@ -1,0 +1,11 @@
+.git
+.idea
+.tmp
+app
+bin
+conf
+dist
+lib
+node_modules
+public
+test

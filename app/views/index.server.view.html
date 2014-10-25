@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbox</title>
+    <meta name="description" content="The Microbox is a collection of docker-friendliness images with minimal size for easy adaption and usage, or simply for inspiration." />
+    <meta name="keywords" content="docker dockerui redis rethinkdb etcd gogs" />
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <header class="clearfix">
+        <span>Microbox <span class="bp-icon bp-icon-about" data-content="The Microbox is a collection of docker-friendliness images with minimal size for easy adaption and usage, or simply for inspiration."></span></span>
+        <h1>The Smallest Docker-friendliness Images</h1>
+        <nav>
+            <a href="https://github.com/microbox/website" target="_blank" class="bp-icon bp-icon-archive" data-info="Fork this project"><span>Fork this project</span></a>
+        </nav>
+    </header>
+    <div id="tabs" class="tabs">
+        <nav>
+            <ul>
+                <li><a href="#section-1" class="icon-shop"><span>Featured</span></a></li>
+                <li><a href="#section-2" class="icon-cup"><span>Popular</span></a></li>
+                <li><a href="#section-3" class="icon-food"><span>App</span></a></li>
+                <li><a href="#section-4" class="icon-lab"><span>Service</span></a></li>
+                <li><a href="#section-5" class="icon-truck"><span>Data</span></a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section id="section-1">
+                <div class="mediabox">
+                    <img src="img/dockerui.png" alt="img01" />
+                    <h3>Docker UI</h3>
+                    <p>DockerUI is a web interface to interact with the Remote API. The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/etcd.png" alt="img02" />
+                    <h3>Etcd</h3>
+                    <p>A highly-available key value store for shared configuration and service discovery.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/gogs.png" alt="img03" />
+                    <h3>Gogs</h3>
+                    <p>Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.</p>
+                </div>
+            </section>
+            <section id="section-2">
+                <div class="mediabox">
+                    <img src="img/dockerui.png" alt="img01" />
+                    <h3>Docker UI</h3>
+                    <p>DockerUI is a web interface to interact with the Remote API. The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/etcd.png" alt="img02" />
+                    <h3>Etcd</h3>
+                    <p>A highly-available key value store for shared configuration and service discovery.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/redis.png" alt="img02" />
+                    <h3>Redis</h3>
+                    <p>Redis is an open source, BSD licensed, advanced key-value cache and store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs.</p>
+                </div>
+            </section>
+            <section id="section-3">
+                <div class="mediabox">
+                    <img src="img/gogs.png" alt="img03" />
+                    <h3>Gogs</h3>
+                    <p>Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/dockerui.png" alt="img01" />
+                    <h3>Docker UI</h3>
+                    <p>DockerUI is a web interface to interact with the Remote API. The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.</p>
+                </div>
+            </section>
+            <section id="section-4">
+                <div class="mediabox">
+                    <img src="img/etcd.png" alt="img02" />
+                    <h3>Etcd</h3>
+                    <p>A highly-available key value store for shared configuration and service discovery.</p>
+                </div>
+            </section>
+            <section id="section-5">
+                <div class="mediabox">
+                    <img src="img/redis.png" alt="img02" />
+                    <h3>Redis</h3>
+                    <p>Redis is an open source, BSD licensed, advanced key-value cache and store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs.</p>
+                </div>
+                <div class="mediabox">
+                    <img src="img/rethinkdb.png" alt="img06" />
+                    <h3>Rehinkdb</h3>
+                    <p>RethinkDB is built to store JSON documents, and scale to multiple machines with very little effort. It has a pleasant query language that supports really useful queries like table joins and group by, and is easy to setup and learn.</p>
+                </div>
+            </section>
+        </div><!-- /content -->
+    </div><!-- /tabs -->
+    <p class="info">Build with ♥ by <a href="https://coderbits.com/e2tox">Ling</a></p>
+</div>
+<script src="js/tabs.js"></script>
+<script>
+    new CBPFWTabs( document.getElementById( 'tabs' ) );
+</script>
+</body>
+</html>

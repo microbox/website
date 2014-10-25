@@ -1,0 +1,23 @@
+web:
+
+  # Path to a directory containing a Dockerfile
+  build: .
+
+  # Mount paths as volumes, optionally specifying a path on the host machine
+  volumes:
+    - ./app:/home/one/website/app
+    - ./conf:/home/one/website/conf
+    - ./lib:/home/one/website/lib
+    - ./public:/home/one/website/public
+
+  # Add environment variables
+  environment:
+    NODE_ENV: development
+
+  # Expose ports. Either specify both ports (HOST:CONTAINER)
+  ports:
+    - "3000:3000"
+    - "35729:35729"
+
+  # Override the default command.
+  command: grunt
