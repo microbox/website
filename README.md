@@ -20,8 +20,11 @@ This command does a few things:
 * If you're running in a development environment, it will then also install development dependencies needed for testing and running your application.
 * Finally, when the install process is over, npm will initiate a bower install command to install all the front-end modules needed for the application.
 
+## Configuration Your Application
+Then you need copy `lib/config/settings.yaml` to `conf/development.yaml`, and configure `PORT`, `AZURE_STORAGE_KEY` and `AZURE_STORAGE_SECRET` in `conf/development.yaml` before run your application.
+
 ## Running Your Application
-After the install process is over, you'll be able to run your application using Grunt, just run grunt default task:
+After the configuration process is over, you'll be able to run your application using Grunt, just run grunt default task:
 
 ```
 $ grunt
