@@ -5,14 +5,14 @@ URL: 'http://microbox.io'
 HOST: '0.0.0.0'
 EMAIL: 'Customer Service <cs@microbox.io>'
 
-# not setting
+# PaaS will always set the PORT environment variable
 PORT:
 
-# database info
+# database info (this is mandatory field)
 AZURE_STORAGE_KEY:
 AZURE_STORAGE_SECRET:
 
-# security
+# security (overwrite the default secret to increase security)
 SECURITY_COOKIE_SECRET: 'PUT_YOUR_COOKIE_SECRET'
 SECURITY_SESSION_KEY: 'SESSION_KEY'
 SECURITY_SESSION_SECRET: 'THREE_MONKEYS'

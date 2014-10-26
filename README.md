@@ -41,6 +41,6 @@ $ fig up
 
 * Local development and testing with just Docker:
 ```bash
-$ docker build -t onebase .
-$ docker run -p 3000:3000 onebase
+$ docker build -t microbox .
+$ docker run -p 3000:3000 microbox
 ```
