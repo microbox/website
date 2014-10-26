@@ -55,7 +55,7 @@ public/lib
 # --------------------
 # Application config
 # --------------------
-*.yaml
+conf/*.yaml
 
 # --------------------
 # App Files

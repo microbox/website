@@ -108,7 +108,10 @@ module.exports = function (grunt) {
                 options: {
                     nodeArgs: ['--debug'],
                     ext: 'js,html',
-                    watch: watchFiles.serverViews.concat(watchFiles.serverJS)
+                    watch: watchFiles.serverViews.concat(watchFiles.serverJS),
+                    env: {
+                        NODE_ENV: 'development'
+                    }
                 }
             }
         },
@@ -168,12 +171,13 @@ module.exports = function (grunt) {
             }
         },
         concurrent: {
-            default: ['nodemon', 'watch'],
-            debug: ['nodemon', 'watch', 'node-inspector'],
+            default: ['env:dev', 'nodemon', 'watch'],
+            debug: ['env:dev', 'nodemon', 'watch', 'node-inspector'],
             options: {
                 logConcurrentOutput: true
             }
         }
+
         // endregion
     });
 
