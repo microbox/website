@@ -1,0 +1,36 @@
+---
+# application info
+title: 'Microbox'
+url: 'http://microbox.io'
+host: '0.0.0.0'
+port: 80
+email: 'Customer Service <cs@microbox.io>'
+
+# database info
+azure_storage_key: 'PUT_YOUR_AZURE_STORAGE_KEY'
+azure_storage_secret: 'PUT_YOUR_AZURE_STORAGE_SECRET'
+
+# security
+security_cookie_secret: 'PUT_YOUR_COOKIE_SECRET'
+security_session_key: 'SESSION_KEY'
+security_session_secrets:
+  - 'ONE_RED_APPLE'
+  - 'TWO_YELLOW_CARS'
+  - 'THREE_MONKEYS'
+
+# social network integration
+integration_github_enabled: false
+integration_github_client_id:
+integration_github_client_secret:
+integration_github_client_callback: 'http://microbox.io/api/v1/auth/github/callback'
+
+# email provider
+mailer_enable: false
+mailer_service: Mailgun
+mailer_user:
+mailer_pass:
+
+# sms provider
+twillo_enable: false
+twillo_user:
+twillo_pass:
