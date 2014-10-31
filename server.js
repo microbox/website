@@ -7,7 +7,6 @@ process.chdir(__dirname);
 /**
  * Module dependencies.
  */
-var pkg = require('./package');
 var init = require('./lib/init')();
 var config = require('./lib/config');
 
@@ -19,7 +18,7 @@ var config = require('./lib/config');
 
 
 // Init the express application
-var app = require('./lib/express')(config.express);
+var app = require('./lib/express')();
 
 // Load Mime information
 require('./lib/mime')();
@@ -28,7 +27,7 @@ require('./lib/mime')();
 app.listen(config.port);
 
 // Logging initialization
-console.log('OneBase Enterprise Web Portal Server ' + pkg.version + ' started on port ' + config.port);
+config.info('\x1b[34m' + 'OneBase Enterprise Web Portal Server ' + config.version + ' started on port ' + config.port + '\x1b[0m');
 
 // Expose app
 module.exports = app;

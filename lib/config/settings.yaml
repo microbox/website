@@ -1,6 +1,9 @@
 ---
 # application info
 TITLE: 'Microbox'
+VERSION: 'latest'
+DESCRIPTION: 'Microbox is a hand-picked collection of docker-friendliness images with minimal size for easy adaption and usage.'
+KEYWORDS: 'docker dockerui redis rethinkdb etcd gogs'
 URL: 'http://microbox.io'
 HOST: '0.0.0.0'
 EMAIL: 'Customer Service <cs@microbox.io>'
@@ -11,6 +14,9 @@ PORT:
 # database info (this is mandatory field)
 AZURE_STORAGE_KEY:
 AZURE_STORAGE_SECRET:
+
+# google analyticts
+GOOGLE_ANALYTICS: 'UA-54705570-2'
 
 # security (overwrite the default secret to increase security)
 SECURITY_COOKIE_SECRET: 'PUT_YOUR_COOKIE_SECRET'

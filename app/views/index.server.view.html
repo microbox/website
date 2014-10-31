@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microbox</title>
-    <meta name="description" content="Microbox is a hand-picked collection of docker-friendliness images with minimal size for easy adaption and usage." />
-    <meta name="keywords" content="docker dockerui redis rethinkdb etcd gogs" />
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body>
+{% extends 'site.server.layout.html' %} {% block body %}
 <div class="container">
     <header class="clearfix">
         <div style="text-align: center"><img src="img/microbox-logo.png" width="320px" /></div>
@@ -99,11 +84,10 @@
             </section>
         </div><!-- /content -->
     </div><!-- /tabs -->
-    <p class="info">Build with ♥ by <a href="https://coderbits.com/e2tox">Ling</a></p>
+    <p class="info">Microbox v{{settings.VERSION}} Build with ♥ by <a href="https://coderbits.com/e2tox">Ling</a></p>
 </div>
 <script src="js/tabs.js"></script>
 <script>
     new CBPFWTabs( document.getElementById( 'tabs' ) );
 </script>
-</body>
-</html>
+{% endblock %}
