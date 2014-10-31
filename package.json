@@ -5,6 +5,7 @@
   "homepage": "http://microbox.io",
   "version": "1.0.2",
   "email": "ling@microbox.io",
+  "blog": "https://coderbits.com/e2tox",
   "private": true,
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "cookie-parser": "~1.3.2",
     "cookie-session": "^1.0.2",
     "express": "~4.7.2",
+    "express-winston": "^0.2.8",
     "glob": "~4.0.5",
     "grunt-cli": "^0.1.13",
     "helmet": "~0.4.0",
